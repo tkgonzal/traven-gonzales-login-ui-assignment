@@ -1,0 +1,75 @@
+#sign-in {
+    min-height: 250px;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    height: 300px;
+    width: 500px;
+    min-height: 300px;
+    min-width: 400px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    padding: 3.25em 0 3.25em 0;
+    box-shadow: 0 0px 10px 3px #f0eff0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+input {
+    border-width: 0 0 0.15em 0;
+    padding: .5em 0 .5em 0;
+    font-size: 1em;
+    min-width: 300px;
+}
+
+input::placeholder {
+    color: #707070;
+}
+
+input:hover {
+    border-color: #bbbbbb;
+}
+
+button {
+    min-width: 300px;
+    font-family: inherit;
+    color: #ffffff;
+    background-color: #4279df;
+    border: none;
+    border-radius: 2em;
+    font-size: 1.1em;
+    padding: .5em 0 .5em 0;
+    box-shadow: 0 5px 12px -1px #bbb9bb;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #558cf1;
+}
+

@@ -1,5 +1,7 @@
 /* ID styles */
 /* Style for sign in form */
+/* Note: All direct child elements of the sign-in form inherit its' min-width for visual parity
+   (e.g. the text inputs, submit button, etc) */
 #sign-in {
     height: 30%;
     width: 60%;
@@ -20,6 +22,7 @@
 }
 
 /* Styling for certain links on login box */
+/* sign-up-link class from header included to reduce redundancy */
 #forgot-password, .sign-up-link {
     text-decoration: none;
 }
@@ -30,7 +33,7 @@
 .login-box {
     width: 25%;
     height: 30%;
-    min-height: 300px;
+    min-height: 350px;
     min-width: 300px;
     background-color: #ffffff;
     display: flex;
@@ -39,7 +42,7 @@
     align-items: center;
     border-radius: 5%;
     padding: 3.25em 0 3.25em 0;
-    box-shadow: 0 0px 10px 3px #9c9c9c;
+    box-shadow: 0 0px 10px 3px #dfdfdf;
     opacity: 0.9;
 }
 
@@ -61,14 +64,15 @@
     flex-direction: column;
     justify-content: center;
     min-width: 80%;
-    margin: 1em 0 1em 0;
+    min-height: 70px;
 }
 
 .sign-in-header h1, .sign-in-header p {
-    margin: 0.3em 0 0.3em 0;
+    margin: 0.1em 0 0.1em 0;
 }
 
 .sign-in-header span {
+    font-size: .8em;
     color: #808080;
 }
 
@@ -86,7 +90,7 @@ body {
 /* Input Styles */
 input[type="text"], input[type="password"] {
     width: 100%;
-    min-width: inherit;
+    min-width: inherit; 
     border-width: 0 0 0.15em 0;
     padding: .5em 0 .5em 0;
     font-size: 1em;
@@ -107,7 +111,8 @@ input[type="checkbox"]:hover, label:hover {
 /* Button Styles */
 button {
     width: 100%;
-    min-width: inherit;
+    min-width: inherit; 
+    min-height: 38px;
     font-family: inherit;
     color: #1d1d1d;
     background-color: #f8aac4;
@@ -115,7 +120,7 @@ button {
     border-radius: 2em;
     font-size: 1.1em;
     padding: .5em 0 .5em 0;
-    box-shadow: 0 5px 12px -1px #bbb9bb;
+    box-shadow: 0 5px 12px -1px #8f758f;
 }
 
 button:hover {

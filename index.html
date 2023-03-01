@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tagbanwa&family=Work+Sans&display=swap" rel="stylesheet"> 
     
-    <!-- Separate Style Sheets -->
+    <!-- External Style Sheet -->
     <link href="app.css" rel="stylesheet">
     
     <!-- Favicon Source -->
@@ -31,8 +31,11 @@
             <!-- Sign In Form -->
             <!-- Does not submit form inputs due to front end focus of project -->
             <form id="sign-in" action="sign-in" onsubmit="return false;">
+                <!-- Text Inputs -->
                 <input type="text" name="username" id="username" placeholder="username" required>
                 <input type="password" name="password" id="password" placeholder="password" required>
+                
+                <!-- "Remember Me" Toggle -->
                 <span id="remember-span">
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember">Remember Me</label>
@@ -40,6 +43,8 @@
 
                 <!-- "Forgot Password" link is just a dead link for this assignment's purposes -->
                 <a id="forgot-password" href="#">Forgot your password?</a>
+                
+                <!-- Submit Button -->
                 <button type="Submit">Sign in</button>
             </form>
         </div>
